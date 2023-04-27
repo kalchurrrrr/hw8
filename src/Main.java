@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -94,23 +96,12 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int[] intArray = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        System.out.print("Исходный массив: ");
-        for (int i = 0; i < intArray.length; i++) {
-            System.out.print(intArray[i] + " ");
-        }
-
-        for (int i = 0; i < intArray.length; i++) {
-            if (intArray[i] % 2 != 0) {
-                intArray[i]++;
+        int[] arr1 = {1, 2, 3};
+        for (int i = 0; i < arr1.length; i++) {
+            if (arr1[i] % 2 != 0) {
+                arr1[i] += 1;
             }
         }
-
-        System.out.print("\nМассив после преобразования (только четные числа): ");
-        for (int i = 0; i < intArray.length; i++) {
-            if (intArray[i] % 2 == 0) {
-                System.out.print(intArray[i] + " ");
-            }
-        }
+        System.out.println(Arrays.toString(arr1));
     }
 }
